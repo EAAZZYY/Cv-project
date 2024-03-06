@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'cv_app/styles.css' %}" />
+    <title>CV Details</title>
+  </head>
+  <body>
+    <h1 class="head">CV INFO</h1>
+    <main>
+      <div class="cv">
+        <h1>Name: {{detail.name}}</h1>
+        | Email: {{detail.email}} | Phone: {{detail.phone_number}} | Address:
+        {{detail.address}}
+
+        <p>About: {{detail.about_you}}</p>
+        <p>Skills: {{detail.skills}}</p>
+        <p>Previous Role: {{detail.previous_work}}</p>
+      </div>
+      {% block content %}
+      <a href="#">Edit</a>
+      <a href="">Download</a>
+      {% endblock %}
+    </main>
+  </body>
+</html>

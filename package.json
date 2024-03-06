@@ -1,0 +1,15 @@
+{
+  "name": "cv-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss build -i ./my_site/cv_app/static/cv_app/input.css -o ./my_site/cv_app/static/cv_app/styles.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
